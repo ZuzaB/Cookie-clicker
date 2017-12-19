@@ -1,7 +1,21 @@
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/Main';
+import SectionLeft from './components/sectionLeft';
+import SectionCenter from './components/sectionCenter';
+import SectionRight from './components/sectionRight';
 
-// Render the main component into the dom
+class App extends React.Component {
+  render() {
+    return (
+     <div className="container">
+      <SectionLeft />
+      <SectionCenter/>
+      <SectionRight/>
+     </div>
+    );
+  }
+}
+
+
 ReactDOM.render(<App />, document.getElementById('app'));

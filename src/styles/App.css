@@ -1,21 +1,105 @@
 /* Base Application Styles */
 body {
-  color: #fff;
+  color: #000;
   background: #222;
 }
-
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+*{
+  box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1700px;
+    height: 150vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
+.section-left {
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  border-right: 5px solid #542102;
+}
+
+.section-center {
+  width: 45%;
+  height: 100%;
+  background: #87cefa;
+}
+
+.section-right {
+  width: 25%;
+  height: 100%;
+  background: #5a5a5a;
+  border-left: 5px solid #542102;
+}
+
+.cookie-quantity {
+  background: #cca978;
   text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+  font-weight: bold;
+  color: #542102;
+  font-size: 30px;
+  padding: 10px 0;
+  margin: 40px 0;
+}
+.cookie-quantity-sec{
+  font-size: 20px;
+}
+.cookie {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cookie-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.producers {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #cacaca;
+  background-image: -webkit-linear-gradient(top, #cacaca, #656b6e);
+  background-image: -moz-linear-gradient(top, #cacaca, #656b6e);
+  background-image: -ms-linear-gradient(top, #cacaca, #656b6e);
+  background-image: -o-linear-gradient(top, #cacaca, #656b6e);
+  background-image: linear-gradient(to bottom, #cacaca, #656b6e);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.producers:hover {
+  background: #ccd1d4;
+  background-image: -webkit-linear-gradient(top, #ccd1d4, #9fa5a8);
+  background-image: -moz-linear-gradient(top, #ccd1d4, #9fa5a8);
+  background-image: -ms-linear-gradient(top, #ccd1d4, #9fa5a8);
+  background-image: -o-linear-gradient(top, #ccd1d4, #9fa5a8);
+  background-image: linear-gradient(to bottom, #ccd1d4, #9fa5a8);
+}
+.producers-img {
+  width: 60px;
+}
+.producers-header {
+  margin: 0 auto;
+}
+.producers-cookie-img {
+  width: 20px;
+}
+.producers-price {
+  color: red;
+}
+.producers-quantity {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(21, 21, 21, .3);
 }
