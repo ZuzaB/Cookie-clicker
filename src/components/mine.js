@@ -11,6 +11,7 @@ class Mine extends React.Component {
   render() {
     return (
       <div className="producers">
+        <div className="producers-info">Each mine produces<br/> <strong>47</strong> cookies per second</div>
         <img className="producers-img" src={Image} alt="Mine Image" />
         <div>
           <h2 className="producers-header">Mine</h2>

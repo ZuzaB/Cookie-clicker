@@ -4,6 +4,7 @@ require('styles/App.css');
 import React from 'react';
 import CookieValue from './cookieValue';
 import Cookie from './cookie';
+import CursorExtra from './cursorExtra';
 
 class SectionLeft extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class SectionLeft extends React.Component {
       <div className="section-left">
         <CookieValue />
         <Cookie />
+        <CursorExtra />
       </div>
     );
   }

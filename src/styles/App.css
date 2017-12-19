@@ -58,6 +58,47 @@ body {
   cursor: pointer;
 }
 
+.cursor {
+  width: 35px;
+  height: 37px;
+  background: url("../images/cursor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.producers-visual {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  padding: 20px 0 0 5px;
+}
+
+.producers-visual img{
+  display: none;
+}
+.producers-visual img:nth-child(-n+10){
+  display: inline;
+}
+
+.grandma {
+  background: url("../images/kitchen-background.png");
+  background-size: contain;
+}
+.farm {
+  background: url("../images/farm-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mine {
+  background: url("../images/mine-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.factory {
+  background: url("../images/factory-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .producers {
   margin: 10px;
   display: flex;
@@ -77,6 +118,19 @@ body {
   font-size: 20px;
   padding: 10px 10px 10px 10px;
   cursor: pointer;
+  position: relative;
+}
+.producers-info {
+  display: none;
+  position: absolute;
+  left: -190px;
+  width: 185px;
+  background: #542102;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #400702;
+  color: #cca978;
 }
 .producers:hover {
   background: #ccd1d4;
@@ -86,6 +140,10 @@ body {
   background-image: -o-linear-gradient(top, #ccd1d4, #9fa5a8);
   background-image: linear-gradient(to bottom, #ccd1d4, #9fa5a8);
 }
+.producers:hover .producers-info {
+  display: block;
+}
+
 .producers-img {
   width: 60px;
 }

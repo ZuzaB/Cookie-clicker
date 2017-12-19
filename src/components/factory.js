@@ -11,6 +11,7 @@ class Factory extends React.Component {
   render() {
     return (
       <div className="producers">
+        <div className="producers-info">Each factory produces<br/> <strong>260</strong> cookies per second</div>
         <img className="producers-img" src={Image} alt="Factory Image" />
         <div>
           <h2 className="producers-header">Factory</h2>
